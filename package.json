@@ -1,0 +1,50 @@
+{
+  "name": "wikom-router",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "repository": "git@github.com:Wikom/wikom-router.git",
+  "author": "Rouven Diener",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "src",
+    "dist"
+  ],
+  "dependencies": {
+    "find-in-object": "https://github.com/Wikom/find-in-object.git",
+    "path-to-regexp": "^1.7.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "webpack": "^1.14.0"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.5.7",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.2",
+    "react-router": "^4.0.0",
+    "react-router-redux": "^5.0.0-alpha.4",
+    "redux": "^3.6.0"
+  },
+  "scripts": {
+    "start": "npm run babel && npm run webpack",
+    "webpack": "webpack --config=production.config.js",
+    "babel": "babel src --out-dir lib"
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-es2015",
+      "babel-preset-react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  }
+}
