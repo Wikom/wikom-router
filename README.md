@@ -187,7 +187,7 @@ configure({
 
 /**
  * Do additional entry point stuff...
- * Render your application (into element with id 'app'
+ * Render your application (into element with id 'app')
  */
 
 ReactDOM.render((
