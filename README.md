@@ -24,9 +24,9 @@ You can also add the standalone build directly to your page. Download dist/index
 
 Remember to include all dependencies as well.
 
-##Usage
+## Usage
 
-###Step 1: Define your routes
+### Step 1: Define your routes
 
 You can either define your application routes globally or (for large applications) in chunks or modules.
 No matter how many route configurations you have: Each configuration needs a unique NAME property and a ROUTE property.
@@ -50,7 +50,7 @@ A named route parameter starts with a colon and ends with the next slash (or the
 Optional parameters are followed by a question mark.
 For more information see https://www.npmjs.com/package/path-to-regexp
 
-###Step 2: Configure your application with your routes
+### Step 2: Configure your application with your routes
 
 To use your routes inside your application you have to call the `configure()` function of `wikom-router` in your entry script.
 
@@ -59,7 +59,7 @@ an an optional `prefix` property with which you can pass path prefixes for your 
 For page routes this can be the common part of the path for your application (usually `'/'`).
 For api routes this should be the `protocol://hostname:port` part for your api requests.
 
-###Step 3: Use your routes anywhere inside your application
+### Step 3: Use your routes anywhere inside your application
 
 There are 2 common use cases for `wikom-router` inside your application:
 1. Building the `<Route>` components for your `react-router
@@ -113,9 +113,9 @@ http://localhost/page/1
 
 which can be used for API calls or whatever else you have in mind...
 
-##Example
+## Example
 
-###Setup
+### Setup
 
 Your common module file `./common-module.js`
 
@@ -197,7 +197,7 @@ ReactDOM.render((
 ), document.getElementById('app'))
 ```
 
-###Usage
+### Usage
 
 To generate a Link to a page of your application:
 
@@ -236,7 +236,7 @@ request
    });
 ```
 
-##Extra Tools
+## Extra Tools
 
 `wikom-router` contains a redux middleware to enhance the `react-router-redux` action LOCATION_CHANGE.
 
@@ -249,7 +249,7 @@ To achieve that you can add `routerEnhancerMiddleware` to your application store
 By accessing the routing part of the global state you can easily compare the location before and after a LOCATION_CHANGE
 event and decide how to react on different kinds of changes.
 
-###Setup
+### Setup
 
 In your entry point or your store configuration:
 
@@ -275,7 +275,7 @@ const store = createStore(
 );
 ```
 
-###Usage
+### Usage
 
 Your own example reducer file `./exampleReducer`
 
