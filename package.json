@@ -1,6 +1,6 @@
 {
   "name": "wikom-router",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "module": "src/index.js",
   "repository": "git@github.com:Wikom/wikom-router.git",
