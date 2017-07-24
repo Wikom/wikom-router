@@ -62,7 +62,7 @@ For api routes this should be the `protocol://hostname:port` part for your api r
 ### Step 3: Use your routes anywhere inside your application
 
 There are 2 common use cases for `wikom-router` inside your application:
-1. Building the `<Route>` components for your `react-router
+1. Building the `<Route>` components for your `react-router`
 2. Building URLs for links and API requests
 
 If you want to fill your `react-router` with automatically generated `<Route>` components, you can simply use the
