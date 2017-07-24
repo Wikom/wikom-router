@@ -55,7 +55,7 @@ For more information see https://www.npmjs.com/package/path-to-regexp
 To use your routes inside your application you have to call the `configure()` function of `wikom-router` in your entry script.
 
 `configure` expects an object as parameter with a `modules` property (containing an array of all your route configurations)
-an an optional `prefix` property with which you can pass path prefixes for your route namespaces.
+and an optional `prefix` property with which you can pass path prefixes for your route namespaces.
 For page routes this can be the common part of the path for your application (usually `'/'`).
 For api routes this should be the `protocol://hostname:port` part for your api requests.
 
@@ -66,7 +66,7 @@ There are 2 common use cases for `wikom-router` inside your application:
 2. Building URLs for links and API requests
 
 If you want to fill your `react-router` with automatically generated `<Route>` components, you can simply use the
-`<PageSwitch>` component exported by `wikom-router` and pass it as single child to the `react-router component of your choice.
+`<PageSwitch>` component exported by `wikom-router` and pass it as single child to the `react-router` component of your choice.
 
 To build URLs you can make use of `wikom-router`'s default export `ROUTE`.
 
