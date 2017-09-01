@@ -9,7 +9,7 @@ import {compile} from 'path-to-regexp'
 import routerEnhancerMiddleware from './middlewares/routerEnhancerMiddleware'
 
 const modules = {};
-const PREFIX = {};
+export const PREFIX = {};
 const routerRoutes = [];
 export const ROUTE = {};
 export let PageSwitch = null;
