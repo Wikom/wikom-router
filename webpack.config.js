@@ -14,18 +14,17 @@ module.exports = {
         umdNamedDefine: true
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
                 exclude: [
                     /node_modules/,
                     "**/__tests__/*"
                 ],
-                loader: 'babel-loader'
+                use: 'babel-loader'
             }
         ]
     },
-    debug: true,
     devtool: 'source-map',
     externals: {
         "find-in-object": "find-in-object",
