@@ -1,17 +1,19 @@
 {
-  "name": "wikom-router",
-  "version": "1.2.0",
+  "name": "@wikom/wikom-router",
+  "version": "1.3.0",
   "main": "lib/index.js",
   "module": "lib/index.js",
-  "repository": "git@github.com:Wikom/wikom-router.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Wikom/wikom-router.git"
+  },
   "author": "Rouven Diener",
   "license": "MIT",
   "files": [
-    "lib",
-    "src"
+    "lib"
   ],
   "dependencies": {
-    "find-in-object": "https://github.com/Wikom/find-in-object.git#v1.2.0",
+    "@wikom/find-in-object": "^1.3.3",
     "path-to-regexp": "^3.1.0"
   },
   "devDependencies": {
@@ -32,5 +34,13 @@
   "scripts": {
     "start": "npm run babel",
     "babel": "babel src --out-dir lib"
+  },
+  "description": "wikom-router makes **route management and creation** easier inside your react application.",
+  "bugs": {
+    "url": "https://github.com/Wikom/wikom-router/issues"
+  },
+  "homepage": "https://github.com/Wikom/wikom-router#readme",
+  "directories": {
+    "lib": "lib"
   }
 }

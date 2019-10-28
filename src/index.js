@@ -4,7 +4,7 @@
 
 import React from 'react'
 import {Route, Switch} from 'react-router'
-import findInObject from 'find-in-object'
+import findInObject from '@wikom/find-in-object'
 import {compile} from 'path-to-regexp'
 import routerEnhancerMiddleware from './middlewares/routerEnhancerMiddleware'
 

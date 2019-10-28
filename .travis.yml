@@ -1,0 +1,17 @@
+if: "(type IN (pull_request, cron, api)) OR (tag IS present)"
+language: node_js
+node_js:
+- stable
+install:
+- yarn
+script:
+- yarn start
+deploy:
+  provider: npm
+  email: r.diener@wikom.de
+  skip_cleanup: true
+  api_key:
+    secure: ZmUcM+68G3vLUSBs0IGy0Iqr5VcV1OyT1j7sWncrnVpAysOB7WtiUNMedkNHL2qM8PE5QspGCrP5Skn8PAGv+z0YIDyTLUGLEhYmxULcBwH86CATUyiu2k9e+HmyaVJytcPbjXpBmRW2pofEVZhy4Wi+BHLD1Y+CdFS8wj6FkwfMNRVAhGwM69hV41P65yNHDPWId2guh7DaDTvJA3F9/FdOS1blw1R4Eh9SRFc7LS3BNwUzsxW6Nv8zBCsWHpwi/2c4C//yoKhcqBOh0aR6aoHBSomav60KvOoLZi7dytUSAU93ZpEcpFDOR6Rc0hRmG5e+/WVqm6WhxWiO92lK2b6ZQc21mKwFZxSk530Bpqi+BHkon2YTCs5S7ONn9m6pYZcCtXpmXee5BPcGtoiOSD1XethuQA/K3QZjYZK7Or9mWH4SBZ/DjB/alujwXnYy7ipAQFJwwU5mZaklwgm7f49IpFZUHJ9LjWHrohRmxT4B7B7bS5K5AT3WKD+ykaoUC+eWNGYKPGtYOo/Th4cMhy0lPVgpsEnTkQHj5xFCWD3jZtI7UaoFFL07N5cs7CMWbUVEfZwJDlSM3atsWj26fXvkjQu1O15uWHuGuYazi8/xVCCkYyWh/QPTy5aldiQo0lcsEO1RQ6S8NclFDAx+DmxPwQWzZFsFK7OLJqO07RU=
+  on:
+    tags: true
+    all_branches: true
